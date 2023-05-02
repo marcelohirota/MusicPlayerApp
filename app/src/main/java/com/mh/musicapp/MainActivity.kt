@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
             handler.postDelayed(UpdateSongTime, 100)
         }
 
-        title_txt.text = "${resources.getIdentifier("astronaut", "raw", packageName)}"
+        title_txt.text = "${resources.getResourceEntryName(R.raw.astronaut)}"
 
         stop_btn.setOnClickListener {
             mediaPlayer.pause()
